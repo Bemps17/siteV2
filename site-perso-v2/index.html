@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- SEO Optimizations -->
+        <meta name="description"
+            content="Portfolio de Bertrand Fouquet, graphiste & webdesigner. Création visuelle, UI/UX et sites web modernes.">
+        <meta name="keywords" content="graphiste, webdesigner, portfolio, design, UI/UX, création web">
+        <link rel="canonical" href="https://www.votresite.com">
+
+        <!-- Open Graph & Twitter Cards -->
+        <meta property="og:title" content="Bertrand Fouquet - Graphiste & Webdesigner">
+        <meta property="og:description" content="Portfolio professionnel de création visuelle et design web">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.votresite.com">
+        <meta name="twitter:card" content="summary_large_image">
+
+        <title>Bertrand Fouquet, Graphiste & Webdesigner</title>
+
+        <!-- Performance Optimizations -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+
+        <!-- Favicon -->
+        <link rel="icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./img/favicon/site.webmanifest">
+
+        <!-- Stylesheets -->
+        <link id="light-mode" rel="stylesheet" href="light-mode.css" disabled>
+        <link id="dark-mode" rel="stylesheet" href="dark-mode.css">
+                <link rel="stylesheet" href="_clock.css">
+        <link rel="stylesheet" href="scroll.css">
+
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            media="all">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+            media="all">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=K2D:wght@400;700&display=swap"
+            media="all">
+        <!-- Performance: Defer JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+        <script src="script.v2.js" defer></script>
+        <script src="script-carrousel.js" defer></script>
+        <script src="clock.js" defer></script>
+       
+        <script src="scroll.js" defer></script>
+    </head>
+
+    <body class="dark-mode">
+
+        <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+        <header>
+
+            <div class="menu-container dark-mode">
+
+                <a href="#"><img class="logo" src="./img/bfgradient.svg" alt="Logo Bertrand Fouquet"></a>
+                <div class="switch-container">
+                    <img src="./img/lune.svg" alt="lune"><label class="toggle-switch">
+                        <input type="checkbox" id="toggle-theme">
+                        <span class="slider"></span>
+                    </label><img src="./img/icons8-soleil.svg" alt="soleil">
+                </div>
+                <ul class="menu dark-mode">
+
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#parcours">Mon parcours</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#anchor-btn1">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+<p></p>
+                </ul>
+                <button id="menu-toggle" aria-label="Ouvrir le menu">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+            <nav id="navbar">
+                <ul class="menu-nav">
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#parcours">Mon parcours</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#anchor-btn1">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <main id="main-content">
+
+            <div id="loading-overlay">
+                <div class="loader-container">
+                    <div id="pop-up1" class="animate__animated animate__bounceInDown">
+                        <span>H</span><span>E</span><span>L</span><span>L</span><span>O</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- test -->
+
+            <section id="hero" class="hero-container dark-mode">
+               
+                    
+                        <div class="digital-clock">
+                            <div class="time" id="time">00:00:00</div>
+                            <div class="date" id="date">01 JAN 2024</div>
+                            <button class="btn-primary chrono-button"><a href="./tools.html"
+                                target="_blank">Plus</a></button>
+                        </div>
+
+                   
+                   
+                
+
+
+
+                <div class="hero-content">
+                   
+
+                    <div class="cover">
+                        <div class="hero-content">
+                            <h1>
+                                Graphiste & Webdesigner
+
+                            </h1>
+                        </div>
+
+                        <p>Transformez vos idées en visuels percutants et modernes.</p>
+                        <a href="#anchor-btn1" class="btn-primary">Découvrir mes services</a>
+                    </div>
+                </div>
+                <div id="scroll-button" class="scroll-indicator" onclick="scrollToBottom()">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                </div>
+
+                <div id="particle-container"></div>
+
+
+
+
+            </section>
+            <div id="stop">
+
+            </div>
+
+            <section id="about" aria-labelledby="about-title">
+                <h2 id="about-title">À propos de moi</h2>
+                <div>
+                  
+                    <p class="introduction">
+                        Passionné par la communication sous toutes ses formes, j’accompagne entreprises et
+                        particuliers
+                        dans
+                        la création de supports visuels et stratégiques adaptés à leurs besoins.
+                        Mon objectif est de traduire vos idées et vos messages en outils de communication
+                        efficaces,
+                        qu’il
+                        s’agisse de valoriser votre image, de promouvoir vos projets ou de renforcer
+                        votre présence auprès de votre audience.
+                    </p>
+                </div>
+                <div class="about-content">
+                    <img id="animatedFish" class="animate__animated animate__flipInY" src="./img/fishAbyssVf.png"
+                    alt="Image de poisson">
+                    <div class="about-text">
+                        <div id="bottomPage"></div>
+
+
+
+                        <div id="values">
+                            <h3 class="section-title">Mes valeurs</h3>
+                            <p class="section-content">
+                                La communication est avant tout une affaire d’humain. Je place l’écoute, la transparence
+                                et
+                                la
+                                collaboration au cœur de mes priorités. Chaque projet est une aventure unique que
+                                je m’efforce de mener avec créativité, rigueur et engagement. Mon ambition est de vous
+                                aider
+                                à
+                                transmettre vos valeurs et à toucher votre cible de manière authentique et percutante.
+                            </p>
+                        </div>
+
+                        <div id="method">
+                            <h3 class="section-title">Ma méthode de travail</h3>
+                            <p class="section-content">
+                                Mon approche repose sur une vision globale de la communication, qui englobe le design,
+                                la
+                                stratégie et le suivi. Chaque projet débute par un dialogue approfondi pour comprendre
+                                vos
+                                objectifs, vos contraintes et votre public. En combinant créativité et pragmatisme,
+                                j’élabore
+                                des solutions sur-mesure :
+                            </p><br>
+
+                            <p><strong>Supports visuels :</strong> Création graphique, identité visuelle, illustrations.
+                            </p>
+                            <br>
+                            <p><strong>Supports digitaux :</strong> Sites web, boutiques en ligne, contenus pour réseau
+                                sociaux.
+                            </p><br>
+                            <p><strong>Communication stratégique :</strong> Accompagnement dans le positionnement,
+                                élaboration
+                                de messages clairs et impactants, choix des canaux de diffusion.</p><br>
+
+
+
+
+                            <p class="section-content">
+                                J’utilise des outils variés (Suite Adobe, Figma, WordPress, HTML/CSS) et des méthodes
+                                agiles
+                                (Trello, design thinking) pour garantir des résultats de qualité, dans le respect des
+                                délais
+                                et
+                                des attentes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="parcours">
+                <h2 data-animate="fade-slide">Mon Parcours</h2>
+                <div id="story">
+
+                    <div data-animate="fade-slide">
+                        <h3 class="section-title">Mon histoire</h3>
+                        <p class="section-content">
+                            Mon parcours est riche et atypique. Après des débuts dans le commerce et la gestion, où j’ai
+                            appris l’importance de bien communiquer avec les clients, j’ai ressenti le besoin
+                            d’exprimer ma créativité et de mettre mes compétences au service de projets à forte valeur
+                            humaine et stratégique. Cette envie m’a poussé à me former dans le design graphique et la
+                            communication digitale.
+                        </p> <br>
+                        <p class="section-content">
+                            Au fil des expériences, j’ai développé une expertise qui va bien au-delà du graphisme :
+                            gestion de projets, stratégie digitale, formation, et même coordination logistique. Ces
+                            compétences transversales me permettent de comprendre
+                            les enjeux globaux de mes clients et de leur proposer des solutions adaptées, que ce soit
+                            pour lancer un produit, fédérer une équipe ou renforcer leur image publique.
+                        </p> <br>
+                        <p class="section-content">
+                            Aujourd’hui, je m’investis pleinement dans chaque projet en mettant à votre disposition mon
+                            savoir-faire et ma passion pour la communication. Ensemble, faisons de vos idées un
+                            véritable atout pour votre succès.
+                        </p>
+                        <a href="portfolio.html" target="_blank" class="btn-primary">Accéder à mon Porfolio</a>
+                    </div>
+
+                    <div data-animate="fade-slide"><img src="./img/pexels-pixabay-52531.jpg" alt=""></div>
+                </div>
+
+
+
+
+
+
+            </section>
+
+
+            <section id="skills">
+                <h2>Compétences</h2>
+
+
+                <div class="skill-list">
+                    <div class="skill-card"><img src="./img/adobe-creative-cloud-svgrepo-com.svg"
+                            alt="creative cloud logo">
+                        <p>Maîtrise des logiciels de création graphique (Photoshop, Illustrator), sens de
+                            l'esthétique, créativité, connaissance des théories des couleurs et de la typographie.
+                        </p>
+                    </div>
+                    <div class="skill-card"> <img src="./img/wireframe-svgrepo-com.svg" alt="logo ui-ux">
+                        <p>Connaissance des principes d'ergonomie, capacité à comprendre les besoins
+                            utilisateurs, maîtrise des outils de prototypage (Figma), notions de développement web
+                            (HTML, CSS).</p>
+                    </div>
+                    <div class="skill-card"><img src="./img/responsive-tablet-svgrepo-com.svg"
+                            alt="responsive design logo">
+                        <p>Maîtrise des techniques de responsive design, connaissance des différents supports
+                            (ordinateur, tablette, mobile), optimisation pour les moteurs de recherche (SEO).</p>
+                    </div>
+                    <div class="skill-card"><img src="./img/special-effects-svgrepo-com.svg" alt="fx logo">
+                        <p>Maîtrise des logiciels d'animation (After Effects, Premiere Pro), sens du rythme et
+                            du timing, créativité.</p>
+                    </div>
+                    <div class="skill-card"><img src="./img/Vector-print.svg" alt="vector-print">
+                        <p>Maîtrise des logiciels de dessin vectoriel (Illustrator), connaissance des
+                            techniques d'impression, capacité à créer des visuels complexes.</p>
+                    </div>
+                </div>
+
+            </section>
+            <div id="anchor-btn1"></div>
+
+            <!-- <section id="services">
+                <h2>Services</h2>
+                <div class="services-grid">
+                    <div class="project-card">
+                        <img src="./img/iddigitale-orange.png" alt="Projet 1">
+                        <h3>Création d'identités visuelles</h3>
+                        <h4>Une communication visuelle et personnalisée pour votre entreprise.</h4>
+
+                        <p> Conception de logos personnalisés <br>
+                            Développement de chartes graphiques complètes <br>
+                            Création d'illustrations vectorielles et pixel art <br>
+                            Retouche photo professionnelle <br></p>
+
+                    </div>
+                    <div class="project-card">
+                        <img src="./img/wirefrmae-reflexion.png" alt="Projet 2">
+                        <h3>Design UI/UX</h3>
+                        <h4>Design d'une maquette de votre site web pour une agence ou un développeur.</h4>
+
+                        <p>Conception de wireframes et de mockups haute fidélité <br>
+                            Définition des parcours utilisateurs et des interactions <br>
+                            Optimisation des interfaces pour une expérience utilisateur fluide <br>
+                        </p>
+                    </div>
+                    <div class="project-card ">
+                        <img src="./img/wirefrmae-reflexion.png" alt="Projet 3">
+                        <h3>Création de sites web / Développement front-end</h3>
+                        <h4>Création de site web à votre image, landing page, WordPress ou no code.</h4>
+
+                        <p>Développement de sites web et applications web personnalisés <br>
+                            Intégration de CMS (WordPress, Drupal) <br>
+                            Optimisation pour le référencement naturel (SEO) <br></p>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://picsum.photos/600/300" alt="Projet 4">
+                        <h3>Motion design</h3>
+                        <h4>Création d'animation 2D</h4>
+                        <p>Création de vidéos animées explicatives, marketing et publicitaires <br>
+                            Intégration d'animations dans des interfaces web <br></p>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://picsum.photos/600/300" alt="Projet 5">
+                        <h3>Refonte de site web</h3>
+                        <h4>Refonte de votre site web, modernisation, mise à jour.</h4>
+                        <p>Adaptation de sites web à tous les supports (ordinateur, tablette, mobile) <br>
+                            Optimisation pour les moteurs de recherche (SEO) <br>
+                            Développement de sites web e-commerce <br></p>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://picsum.photos/600/300" alt="Projet 6">
+                        <h3>Illustration vectorielle et infographie print et ou web </h3>
+                        <h4>Besoin de support graphique dans le cadre d'une communication </h4>
+                        <p>Création d'illustrations vectorielles pour la presse, l'édition et le web <br>
+                            Réalisation d'infographies, de graphiques et de diagrammes <br>
+                            Préparation de fichiers pour l'impression <br></p>
+                    </div>
+                </div>
+
+            </section> -->
+            <section id="services">
+                <h2>Services</h2>
+                <div class="carousel-container">
+                    <button class="carousel-nav prev">&#9664;</button>
+                    <div class="services-carousel">
+                        <div class="project-card">
+
+                            <div>
+                                <h3>Création d'identités visuelles</h3>
+                                <img src="./img/iddigitale-orange.png" alt="Projet 1">
+                            </div>
+                            <div class="text-container-services">
+                                <h4>Une communication visuelle et personnalisée pour votre entreprise.</h4>
+                                <p>
+                                    Conception de logos personnalisés <br>
+                                    Développement de chartes graphiques complètes <br>
+                                    Création d'illustrations vectorielles et pixel art <br>
+                                    Retouche photo professionnelle <br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div>
+                                <h3>Design UI/UX</h3>
+                                <img src="./img/iddigitale-orange.png" alt="Projet 2">
+                            </div>
+                            <div class="text-container-services">
+                                <h4>Design d'une maquette de votre site web pour une agence ou un développeur.</h4>
+                                <p>
+                                    Conception de wireframes et de mockups haute fidélité <br>
+                                    Définition des parcours utilisateurs et des interactions <br>
+                                    Optimisation des interfaces pour une expérience utilisateur fluide <br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div>
+                                <h3>Création de sites web / Développement front-end</h3>
+                                <img src="./img/iddigitale-orange.png" alt="Projet 3">
+                            </div>
+                            <div class="text-container-services">
+                                <h4>Création de site web à votre image, landing page, WordPress ou no code.</h4>
+                                <p>
+                                    Développement de sites web et applications web personnalisés <br>
+                                    Intégration de CMS (WordPress, Drupal) <br>
+                                    Optimisation pour le référencement naturel (SEO) <br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div>
+                                <h3>Motion design</h3>
+                                <img src="./img/iddigitale-orange.png" alt="Projet 4">
+                            </div>
+                            <div class="text-container-services">
+                                <h4>Création d'animation 2D</h4>
+                                <p>
+                                    Création de vidéos animées explicatives, marketing et publicitaires <br>
+                                    Intégration d'animations dans des interfaces web <br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div>
+                                <h3>Refonte de site web</h3>
+                                <img src="./img/iddigitale-orange.png" alt="Projet 5">
+                            </div>
+                            <div class="text-container-services">
+                                <h4>Refonte de votre site web, modernisation, mise à jour.</h4>
+                                <p>
+                                    Adaptation de sites web à tous les supports (ordinateur, tablette, mobile) <br>
+                                    Optimisation pour les moteurs de recherche (SEO) <br>
+                                    Développement de sites web e-commerce <br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div>
+                                <h3>Illustration vectorielle et infographie print et ou web</h3>
+                                <img src="./img/iddigitale-orange.png" alt="Projet 6">
+                            </div>
+                            <div class="text-container-services">
+                                <h4>Besoin de support graphique dans le cadre d'une communication</h4>
+                                <p>
+                                    Création d'illustrations vectorielles pour la presse, l'édition et le web <br>
+                                    Réalisation d'infographies, de graphiques et de diagrammes <br>
+                                    Préparation de fichiers pour l'impression <br>
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="indicator-containers">
+                        <div class="carousel-indicators"></div>
+                    </div>
+                    <button class="carousel-nav next">&#9654;</button>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <div class="section">
+
+                    <p><strong>Nom :</strong> Bertrand FOUQUET<br>
+                        <strong>Adresse :</strong> 17138 PUILBOREAU<br>
+                        <strong>Contact :</strong> <br>
+                        <img src="./img/envelope-line-icon.svg" alt="mail-logo"><span> : </span><a
+                            href="mailto:bertrandfouquet@gmail.com">bertrandfouquet@gmail.com</a>
+                        <br><img src="./img/phone-call-icon.svg" alt="phone-logo"><span> : </span>Tél : 06 60 00 00 00
+                    </p>
+                </div>
+                <form id="contactForm" method="POST" action="backend/traitement-contact.php">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="nom" placeholder="Écrivez votre nom" autocomplete="name"
+                            required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Écrivez votre adresse email"
+                            autocomplete="email" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Écrivez votre message" required
+                            aria-required="true"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit">Envoyer</button>
+                </form>
+            </section>
+
+            <!-- <section id="contact">
+                <h2>Contact</h2>
+
+                <form id="contactForm" method="POST" action="backend/traitement-contact.php">
+
+                    <label for="name">Nom</label><input type="text" placeholder="Ecrivez votre nom" name="nom"
+                        autocomplete="name" required>
+                    <label for="email">Email</label><input type="email" placeholder="@ Ecrivez votre mail" name="email"
+                        autocomplete="email" required>
+                    <p>Message</p><textarea placeholder="Ecrivez votre message" name="message" required></textarea>
+
+                    <button class="submit" type="submit">Envoyer</button>
+                </form>
+            </section> -->
+
+
+            <div class="min-w-8" id="scrollToTop">
+                <svg width="32" height="32" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.1918 8.90615C15.6381 8.45983 16.3618 8.45983 16.8081 8.90615L21.9509 14.049C22.3972 14.4953 22.3972 15.2189 21.9509 15.6652C21.5046 16.1116 20.781 16.1116 20.3347 15.6652L17.1428 12.4734V22.2857C17.1428 22.9169 16.6311 23.4286 15.9999 23.4286C15.3688 23.4286 14.8571 22.9169 14.8571 22.2857V12.4734L11.6652 15.6652C11.2189 16.1116 10.4953 16.1116 10.049 15.6652C9.60265 15.2189 9.60265 14.4953 10.049 14.049L15.1918 8.90615Z"
+                        fill="black"></path>
+                </svg>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <p>© 2024 - Bertrand Fouquet, Graphiste & Webdesigner</p>
+            </div>
+            <div id="reseaux">
+                <p>Suivez moi ici :</p>
+                <div id="logo-reseaux">
+                    <a href="" target="_blank"><img src="./img/icons8-linkedin.svg" alt="linkedin logo"></a>
+                    <a href="" target="_blank"><img src="./img/icons8-instagram.svg" alt="insta logo"></a><a href=""
+                        target="_blank"><img src="./img/icons8-facebook-nouveau.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="foot2">
+                <a class="legales" target="_blank" href="mentions-legales.html">Mentions Légales</a>
+            </div>
+            <div class="maps">
+                <a href="https://maps.app.goo.gl/1TRpNmRiYhZ79Edn6" target="_blank"
+                    aria-label="Localisation à La Rochelle">
+                    <img src="./img/map-marker.svg" alt="Icône localisation" width="30" height="30">
+                </a>
+                <p>La Rochelle</p>
+            </div>
+        </footer>
+
+
+    </body>
+
+</html>

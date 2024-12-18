@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tools</title>
+
+        <!-- Favicon -->
+        <link rel="icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./img/favicon/site.webmanifest">
+
+        <!-- script -->
+        <script src="chrono.js" defer></script>
+        <script src="script.v2.js" defer></script>
+
+
+
+
+        <!-- style -->
+
+        <link id="light-mode" rel="stylesheet" href="light-mode.css" disabled>
+        <link id="dark-mode" rel="stylesheet" href="dark-mode.css">
+        <link rel="stylesheet" href="chrono.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            media="all">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+            media="all">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=K2D:wght@400;700&display=swap"
+            media="all">
+    </head>
+
+    <body>
+        <header>
+            <header>
+
+                <div class="logoContainer">
+
+                    <a href="index.html" target="_blank"><img class="logotools" src="./img/bfgradient.svg"
+                            alt="Logo Bertrand Fouquet"></a>
+
+
+
+                </div>
+
+            </header>
+        </header>
+
+        <main>
+            <section id="title">
+                <h1>TOOLS</h1>
+            </section>
+            <section>
+
+                <div id="tools-container">
+                    <div id="controls" draggable="false">
+
+                        <div id="chronometer">
+                            <h3>Chronomètre</h3>
+                            <p id="chrono-display">00:00</p>
+                            <button onclick="startChronometer()">Démarrer</button>
+                            <button onclick="stopChronometer()">Arrêter</button>
+                            <button onclick="resetChronometer()">Réinitialiser</button>
+                        </div>
+                        <div id="timer">
+                            <h3>Timer</h3>
+                            <p id="timer-display">00:00</p>
+
+                            <!-- Champ pour saisir le temps en secondes -->
+                            <label for="timer-input-seconds">Temps en secondes :</label>
+                            <input type="number" id="timer-input-seconds" placeholder="Secondes">
+
+                            <!-- Champ pour saisir le temps en minutes -->
+                            <label for="timer-input-minutes">Temps en minutes :</label>
+                            <input type="number" id="timer-input-minutes" placeholder="Minutes">
+
+                            <button onclick="startTimerFromInput()">Démarrer</button>
+                            <button onclick="stopTimer()">Arrêter</button>
+                            <button onclick="resetTimer()">Réinitialiser</button>
+                        </div>
+                    </div>
+                </div>
+<div><img src="" alt=""><a href="./scoreur/index.html">SCOREUR</a></div>
+
+
+            </section>
+           
+        </main>
+        <footer></footer>
+    </body>
+
+</html>

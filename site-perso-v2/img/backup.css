@@ -1,0 +1,222 @@
+#services {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding-bottom: 4vh;
+    border-radius: 10px;
+  
+   
+    box-shadow: 2px 0px 2px 0px rgba(255, 255, 255, 0.5);
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  
+  #services h2 {
+    box-shadow: 2px 0px 2px 0px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    background: #000;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin-bottom: 2vh;
+   
+    padding-bottom: 2vh;
+    margin-bottom: 2vh;
+  }
+  #services h3 {
+    margin-bottom: 10px;
+    font-size: 3vh;
+    color: #ff7700;
+  }
+  @media (min-width:1920px){
+    #services h3 {
+        
+        font-size: 2vh;
+       
+    }  
+  
+  }
+  
+  @media (max-width: 768px) {
+    #services {
+      margin-top: 2vh;
+      border-radius: 10px;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      justify-content: center;
+    }
+    #services h2 {
+      font-size: 8vw;
+      color: white;
+    }
+    #services h3 {
+      margin-bottom: 10px;
+      font-size: 6vw;
+      color: #ff7700;
+    }
+  
+    .services-txt p {
+      font-size: 1rem;
+    }
+    .project-card {
+      display: flex;
+      flex-direction: column;
+    
+      align-items: center;
+      background: #121212;
+      margin: 2vh 6vh;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      transition: none;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+     
+    }
+    .project-card img {
+      max-width: 100vw;
+      height: auto;
+      margin-bottom: 1vh;
+    }
+  }
+  
+  
+  @media (max-width: 1024px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+      
+      margin: auto;
+    }
+  }
+  .project-card {
+    max-width: fit-content;
+      display: flex;
+      flex-direction: column;
+     
+      align-items: center;
+     
+      padding: 2vh 2rem;
+     
+      
+      
+      position: relative;
+      
+      border-radius: 10px;
+  }
+  
+  .project-card h3 {
+  display: flex;
+  text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+  .project-card h4 {
+    margin-bottom: 2vh;
+  }
+  
+  
+  
+  /* .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+  } */
+  
+  /* .project-card p {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .project-card .hidden-text {
+      opacity: 0; /* Caché par défaut 
+      transition: opacity 0.3s ease-in-out; /* Transition douce lors du survol 
+    }
+    
+  .project-card.active {
+    transform: scale(1.1);
+    height: auto;
+    /* Pour un effet plus doux, on peut ajouter une légère ombre portée 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  /* === Active State === 
+  .project-card.active {
+    height: auto; /* Taille augmentée pour afficher le contenu 
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  .project-card.active p.hidden-text {
+    opacity: 1;
+  }
+  .project-card.active p {
+    opacity: 1;
+  } 
+  .voir-plus {
+   border: solid #ff7700;
+    color: white;
+    border: solid #ff7700;
+    padding: 2px 2px;
+  
+    cursor: pointer;
+    font-size: 1rem;
+  } */
+  
+  @media (max-width: 768px) {
+    .project-card:hover {
+      transform: none;
+    }
+  }
+  
+  .project-card img {
+    border-radius: 10px;
+    width: 25vw;
+    min-width: 128px;
+    max-width: 480px;
+    margin-bottom: 1vh;
+    border: solid #ff7700;
+   
+  }
+  @media (min-width:1920px) {
+    .project-card img {
+        max-width: 480px;
+        height: auto;
+        margin-bottom: 1vh
+    }
+  }
+  @media (max-width: 1024px) {
+    .project-card{
+      
+      max-width: 70vw;
+      height: auto;
+      margin: auto;
+    }
+  }
+  @media (max-width: 768px) {
+   
+  }
+  
+  
+  /* .image-container::after {
+    content: "voir plus"; 
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    pointer-events: none; 
+  }
+  
+  .image-container:hover::after {
+    opacity: 1; 
+  } */
+  
